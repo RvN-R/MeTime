@@ -1,0 +1,41 @@
+/* global styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+
+}
+:root{
+    --dark:#000;
+    --primaryColor:#2a3166;
+    --darkPink:#EE7879;
+    --lightPink:#f4abaa;
+    --light:#cae7df;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* footer main */
+.footer-icons{
+    color: var(--light) ;
+}
+
+footer a {
+  font-size: 1.5em;
+  padding: 0 12px;
+}
