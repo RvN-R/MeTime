@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "+h0ou$51@1&l)n)d24txuog^1hh8!&$colyun2r-(#ch$3-uc6"
 
-# SECURITY WARNING: don't run with 
+# SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 DEBUG = 'DEVELOPMENT' in os.environ
 
