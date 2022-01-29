@@ -1,1 +1,1 @@
-web: gunicorn me_time.wsgi:application
+web: gunicorn metimeminds.wsgi:application
