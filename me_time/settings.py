@@ -29,7 +29,7 @@ SECRET_KEY = "+h0ou$51@1&l)n)d24txuog^1hh8!&$colyun2r-(#ch$3-uc6"
 # DEBUG = True
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['me-time4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['metimeminds.herokuapp.com', 'localhost']
 
 
 # Application definition
