@@ -9,23 +9,19 @@
     outline: none;
 }
 
+
 html{
     scroll-behavior: smooth;
     
 }
 
 body{
-    background-color: rgb(7, 131, 131);
+    background-color: rgb(5, 71, 71);
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* buttons */
-.btn-outlin-dark {
+.btn-outline-dark {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
