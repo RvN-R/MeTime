@@ -21,11 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
+
 # SECURITY WARNING: keep the secret key used in production secret! 
 
 SECRET_KEY = "+h0ou$51@1&l)n)d24txuog^1hh8!&$colyun2r-(#ch$3-uc6"
 
-# SECURITY WARNING: don't run with debug turned on in production
+# SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 DEBUG = 'DEVELOPMENT' in os.environ
 
@@ -47,8 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
 
-    # other
-    'crispy_forms',
+   
 ]
 
 MIDDLEWARE = [
@@ -63,7 +63,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'me_time.urls'
 
-# CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
 
 TEMPLATES = [
     {
@@ -125,8 +125,6 @@ else:
          }
     }
 
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -163,11 +161,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR/'static/']
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Default primary key field type

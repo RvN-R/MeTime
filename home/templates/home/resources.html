@@ -3,29 +3,133 @@
 
 
 {% block content %}
-<div class="container">
-<h1>Mental Health Resources</h1>
-<p>let's talk about it</p>
-</div>
-<section class="resources">
-   <div class="container">
-  <div class="row">
-    <div class="col order-last">
-      <h1><a href="https://ok2talk.org/">Help for the young</a></h1>
-      <p>OK2Talk is a community for teens and young adults struggling with mental health problems. learn more and start talking about mental health</p>
-    </div>
-    <div class="col order-last">
-      <h1><a href="https://www.mentalhealth.gov/talk/people-mental-health-problems">Mental health expats</a></h1>
-      <h3>For People With Mental Health Problems</h3>
-      <p>If you have, or believe you may have, mental health problem, it can be helpful to talk about these issues with others.<br> It can be scary to reach out for help, but it is often the first step to helping you heal, grow, and recover.<br>
+ <!-- resources Accordion -->
+    <section id="tips" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">5 Steps to mental wellbeing</h2>
+        <p class="lead text-center">Trying these 5 steps to help you feel more positive and able to get the most out of life.</p>
+        <div class="accordion accordion-flush" id="tips">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tip-one"
+              >
+               1.Connect with other people
+              </button>
+            </h2>
+            <div
+              id="tip-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tips"
+            >
+              <div class="accordion-body">
+               Good relationships are important for your mental wellbeing. They can:
 
-Having a good support system and engaging with trustworthy people are key elements to successfully talking about your own mental health.</p>
-    <div class="col order-last">
-      <h1><a href="https://ok2talk.org/">Help for the young</a></h1>
-      <p>OK2Talk is a community for teens and young adults struggling with mental health problems. learn more and start talking about mental health</p>
-    </div>
-    
-  </div>
-</div>
-</section>
+               help you to build a sense of belonging and self-worth
+               give you an opportunity to share positive experiences
+               provide emotional support and allow you to support others
+               There are lots of things you could try to help build stronger and closer relationships:
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tip-two"
+              >
+                2.Pay attention to the present moment
+              </button>
+            </h2>
+            <div
+              id="tip-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tips"
+            >
+              <div class="accordion-body">
+              Paying more attention to the present moment can improve your mental wellbeing. This includes your thoughts and feelings, your body and the world around you.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tip-three"
+              >
+               3.Learn new skills
+              </button>
+            </h2>
+            <div
+              id="tip-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tips"
+            >
+              <div class="accordion-body">
+               Research shows that learning new skills can also improve your mental wellbeing by:
+
+boosting self-confidence and raising self-esteem
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tip-four"
+              >
+               4.Be Physically Active
+              </button>
+            </h2>
+            <div
+              id="tip-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tips"
+            >
+              <div class="accordion-body">
+               Being active is not only great for your physical health and fitness. Evidence also shows it can also improve your mental wellbeing by:
+               raising your self-esteem
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tip-five"
+              >
+                5.Give to others
+              </button>
+            </h2>
+            <div
+              id="tip-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#tips"
+            >
+              <div class="accordion-body">
+                Research suggests that acts of giving and kindness can help improve your mental wellbeing by:
+
+                creating positive feelings and a sense of reward
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 {% endblock %}
