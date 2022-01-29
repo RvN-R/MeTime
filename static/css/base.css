@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* global styles */
 *{
     padding: 0;
@@ -8,31 +9,20 @@
     outline: none;
 
 }
-:root{
-    --dark:#000;
-    --primaryColor:#2a3166;
-    --darkPink:#EE7879;
-    --lightPink:#f4abaa;
-    --light:#cae7df;
-}
+
 
 html{
-    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+    background-color: aqua;
 }
-
 
 
 /* footer main */
 .footer-icons{
-    color: var(--light) ;
+    color: var(--bs-light) ;
 }
 
 footer a {

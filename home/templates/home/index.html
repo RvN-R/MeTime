@@ -6,16 +6,21 @@ Home
 
 {% block content %}
 <!-- showcase -->
-<section class="bg-dark text-light p-5 text-center h-100">
+<section class="bg-dark text-light p-5 text-center h-100 text-sm-start">
     <div class="container">
         <!-- flex items inside flexbox -->
-        <div class="d-sm-flex">
+        <div class="d-sm-flex align-items-center justify-content-between">
             <div>
          <h1>Self Care is <span class="text-warning">Self Love</span></h1>
+         <p class="lead my-4">Mental health is "a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community",</p>
+         <button class="btn btn-primary btn-large">Start Your Journey</button>
         </div>
-            <img src="/media/undraw_meditation_re_gll0.svg" class="img-fluid w-50" alt="">
-            
+            <img src="/media/undraw_meditation_re_gll0.svg" class="img-fluid w-50 d-sm-block" alt="">
+    
         </div>
     </div>
 </section>
+
+<!-- newsletter -->
+
 {% endblock %}

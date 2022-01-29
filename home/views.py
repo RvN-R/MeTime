@@ -13,7 +13,6 @@ def resources(request):
     return render(request, "home/resources.html")
 
 
-
 def about(request):
     """a view to render aboutpage"""
     return render(request, "home/about.html")
