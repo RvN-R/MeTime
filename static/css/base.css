@@ -9,14 +9,23 @@
     outline: none;
 }
 
-
+/* breath page */
+.breath{
+    background-color: #021316;
+    color: #fff;
+    
+}
+.header{
+    font-family: 'Abril Fatface', cursive;
+    line-height: 1rem;
+}
 html{
     scroll-behavior: smooth;
     
 }
 
 body{
-    background-color: rgb(5, 71, 71);
+    background-color: #fff;
 }
 
 
@@ -68,8 +77,9 @@ button,
 }
 
 .allauth-form-inner-content input{
-    border-color:#000;
+    border-color:rgb(17, 15, 15);
     border-radius:0;
+   
 
 }
 
@@ -114,7 +124,6 @@ allauth-form-inner-content button,
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
-
 /* footer main */
 .footer-icons{
     color: var(--bs-light);
