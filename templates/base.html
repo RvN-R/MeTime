@@ -61,8 +61,7 @@
                     {% if request.user.is_superuser %}
                  <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
                  {% endif %}
-                 <li class="nav-item"><a href="#" class="nav-link">My Journal</a></li>
-                 
+                 <li class="nav-item"><a href="{% url 'journal' %}" class="nav-link">My journal</a></li>
                  <li class="nav-item"><a href="#pledges" class="nav-link">Pledges</a></li>
                  <li class="nav-item"><a href="{% url 'account_logout' %}" class="nav-link">Logout</a></li>
 
@@ -105,7 +104,7 @@
 
 
 <!-- footer -->
-<footer class="bg-dark text-white text-center fixed-bottom">
+<footer class="bg-dark text-white text-center">
         <!-- social media icons -->
         <div class="text-center text-white p-3">
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook footer-icons hvr-pulse" style="font-size: 20px; color:#fff"></i></a>
