@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="https://image.freepik.com/free-vector/organic-flat-people-meditating-collection_52683-60663.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Mentally Cool</h2>
+            <p class="lead">We are 4-minds - a group of people taking part in the Code Institute January 22 Hackathan
+                 on mindfullness and wellbeing at the work place
+            </p>
+            <p>
+            Journalising and making pledges to improve stress management may be helpful for some people to use to improve their mind.
+            </p>
+            <p>So explore and See if Journalising or pledging is for you.</p>
+            <a href="{% url 'resources' %}" class="btn btn-light mt-3">
+              <i class="fas fa-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- team members -->
+    <section id="team" class="p-5 bg-dark">
+      <div class="container-fluid">
+        <h2 class="text-center text-white">Our Team</h2>
+        <p class="lead text-center text-white mb-5">
+       Talent wins games, but teamwork and intelligence wins championships
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://avatars.githubusercontent.com/u/20447596?v=4"
+                  class="rounded-circle mb-3" width="100"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Debbie</h3>
+                <a href="#rebecca"><i class="fab fa-linkedin text-dark mx-1"></i></a>
+                <a href="https://github.com/debbiect246"><i class="fab fa-github text-dark mw-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://avatars.githubusercontent.com/u/76949692?v=4"
+                  class="rounded-circle mb-3" width="100"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Richard</h3>
+                <a href="#richard"><i class="fab fa-linkedin text-dark mx-1"></i></a>
+                <a href="https://github.com/RvN-R" target="_blank"><i class="fab fa-github text-dark mw-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://avatars.githubusercontent.com/u/66253291?v=4"
+                  class="rounded-circle mb-3" width="100"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Sandra</h3>
+                <a href="#sandra"><i class="fab fa-linkedin text-dark mx-1"></i></a>
+                <a href="https://github.com/Atinos31"><i class="fab fa-github text-dark mw-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-md-6 col-lg-3">
+            <div class="card bg-light p-3">
+              <div class="card-body text-center">
+                <img
+                  src="https://ca.slack-edge.com/T0L30B202-U02NQ092JG3-b65635457959-512"
+                  class="rounded-circle mb-3" width="120"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Ashley</h3>
+                <a href="#ashley"><i class="fab fa-linkedin text-dark mx-1"></i></a>
+                <a href="#ashley"><i class="fab fa-github text-dark mw-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<div class="section m-3 bg-light"></div>
+                
+
+{% endblock %}

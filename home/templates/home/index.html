@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_title %}
+Home
+{% endblock %}
+
+{% block content %}
+ <!-- Showcase -->
+    <section
+      class="text-dark text-bold p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1 class="header">Self Care is <span class="text-info"> Self Love</span></h1>
+            <p class="lead my-4">
+                Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel,
+                 and act. It also helps determine how we handle stress, relate to others, and make choice
+            </p>
+            <button
+              class="btn btn-dark btn-lg hvr-grow"
+            ><a href="{% url 'account_signup' %}" class="text-white" style="text-decoration:none;">Start Your Journey</a>
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="https://image.freepik.com/free-vector/tiny-people-beautiful-flower-garden-inside-female-head-isolated-flat-illustration_74855-11098.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
