@@ -6,7 +6,7 @@ Home
 
 {% block content %}
 <!-- Showcase -->
-<section class="bg-light text-dark text-bold p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+<section class="bg-light text-dark text-bold p-5 p-lg-0 pt-lg-5 text-sm-start">
   <div class="container">
     <div class="row g-0">
       <!--Page Heading-->
@@ -14,14 +14,18 @@ Home
         <div>
           <h1>My Journal <span class="text-info"></h1>
           <p class="lead my-4">
-            Trapped and in need of expressing your feelings, but you don't have a platform. Take some me time, turn off
-            from the rest of the world and express yourself in My Journal.
+            Welcome to your Journal, this resource is here for you to express your feelings. Sometimes its hard to express our inner most thoughts to other people, Me Time Journal is here to help you express and release pressure from the everyday grind.
+          </p>
+          <p class="lead my-4">
+            Write in the Journal whenever the mood strikes, go back every now and again and reflect on your past feelings.
           </p>
         </div>
       </div>
       <!-- Journal Entries-->
       <div class="col-12">
-        {% for post in posts %}
+        <!--If Statment that checks to see if the user has a post existing in db-->
+        {% if posts %}
+          {% for post in posts %}
           <div class="card mb-3">
             <div class="card-body">
               <h5 class="card-title">{{post.title}}</h5>
@@ -29,7 +33,11 @@ Home
               <p class="card-text"><small class="text-muted">{{post.created}}</small></p>
             </div>
           </div>
-        {% endfor %}
+          {% endfor %}
+        {% else %}
+        <h2>You have yet to post to your Journal.</h2>
+        <h3>Why not fill out the form below and submit your first entry?</h3>
+        {% endif %}
       </div>
       <!--Journal Entry Form-->
       <div class="col-12">
@@ -39,8 +47,8 @@ Home
               {% csrf_token %}
               {{ form|crispy }}
               <div class="">
-                <button class="btn rounded-0 text-uppercase" type="submit">Submit Post</button>
-            </div>
+                <button class="btn btn-large rounded-0 text-uppercase" type="submit">Post to your Journal</button>
+              </div>
             </form>
           </div>
         </div>
