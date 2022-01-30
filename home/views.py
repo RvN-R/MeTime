@@ -17,3 +17,9 @@ def resources(request):
 def about(request):
     """a view to render aboutpage"""
     return render(request, "home/about.html")
+
+
+def breath(request):
+    """a view to render meditation page"""
+    return render(request, "home/breath.html")
+
