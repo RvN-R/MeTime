@@ -7,12 +7,10 @@ from .models import Journal
 
 def journal(request):
     """a view to journal homepage"""
-    user = str(request.user)
+    user = request.user
     print(user)
-    posts = Journal.objects.all()
+    posts = Journal.objects.all().filter(poster=user)
     print(posts)
-    userPosts = get_object_or_404(Journal, pk=1)
-    print(userPosts)
     context = {
         "user": user,
         "posts": posts
