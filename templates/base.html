@@ -48,7 +48,7 @@
     <!-- navigation -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light navbar-dark">
      <div class="container">
-         <a href="{% url 'home' %}" class="navbar-brand"><i class="fas fa-heartbeat hvr-pulse"> Mental health</i></a>
+         <a href="{% url 'home' %}" class="navbar-brand"><i class="fas fa-heartbeat hvr-pulse"> Mental <span class="text-warning">health</span></i></a>
          
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
              <span class="navbar-toggler-icon"></span>
@@ -57,19 +57,18 @@
              <ul class="navbar-nav ms-auto">
                  <li class="nav-item"><a href="{% url 'about'%}" class="nav-link">About</a></li>
                  <li class="nav-item"><a href="{% url 'breath'%}" class="nav-link">Breath</a></li>
+                 <li class="nav-item"><a href="{% url 'resources' %}" class="nav-link">Resources</a></li>
+
                  
 
                  {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
-                 <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
-                 {% endif %}
                  <li class="nav-item"><a href="#" class="nav-link">My Journal</a></li>
                  
-                 <li class="nav-item"><a href="#pledges" class="nav-link">Pledges</a></li>
+                 {% endif %}
+                 <li class="nav-item"><a href="#" class="nav-link">My Journal</a></li>
                  <li class="nav-item"><a href="{% url 'account_logout' %}" class="nav-link">Logout</a></li>
-
                  {% else %}
-                 <li class="nav-item"><a href="{% url 'resources' %}" class="nav-link">Resources</a></li>
                  <li class="nav-item"><a href="{% url 'account_login' %}" class="nav-link">Login</a></li>
                  <li class="nav-item"><a href="{% url 'account_signup' %}" class="nav-link">Register</a></li>
                  {% endif %}
@@ -109,13 +108,13 @@
 <!-- footer -->
 <footer class="bg-dark text-white text-center fixed-bottom">
         <!-- social media icons -->
-        <div class="text-center text-white p-3">
+        <div class="text-center text-white p-2">
             <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook footer-icons hvr-pulse" style="font-size: 20px; color:#fff"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram footer-icons hvr-pulse"style="font-size: 20px; color:#fff"></i></a>
             <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin footer-icons hvr-pulse" style="font-size: 20px; color:#fff"></i></a>
         </div> 
          <div class="container">
-        <p class="lead">Copyright &copy; 2021 MeTime</p>
+        <p class="small">Copyright &copy; 2021 <span class="text-warning">4Minds</span></p>
 
       </div>
     </footer>

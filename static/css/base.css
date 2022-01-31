@@ -11,7 +11,11 @@
 
 .header{
     font-family: 'Abril Fatface', cursive;
-    line-height: 1rem;
+    line-height: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    
 }
 html{
     scroll-behavior: smooth;
