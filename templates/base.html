@@ -58,19 +58,10 @@
                  <li class="nav-item"><a href="{% url 'about'%}" class="nav-link">About</a></li>
                  <li class="nav-item"><a href="{% url 'resources' %}" class="nav-link">Resources</a></li>
                  {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-<<<<<<< HEAD
-                 <li class="nav-item"><a href="journal" class="nav-link">My Journal</a></li>
-                 {% endif %}
+    
+                 <li class="nav-item"><a href="{% url 'journal' %}" class="nav-link">My Journal</a></li>
+                 
                  <li class="nav-item"><a href="{% url 'breath'%}" class="nav-link">Breath</a></li> 
-=======
-
-                 <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
-                 {% endif %}
-                 <li class="nav-item"><a href="{% url 'journal' %}" class="nav-link">My journal</a></li>
-                 <li class="nav-item"><a href="#pledges" class="nav-link">Pledges</a></li>
-
->>>>>>> 999a19bafacb6ca6c8de2cc8c16d3fcc6856dfde
                  <li class="nav-item"><a href="{% url 'account_logout' %}" class="nav-link">Logout</a></li>
                  {% else %}
                  <li class="nav-item"><a href="{% url 'account_login' %}" class="nav-link">Login</a></li>
