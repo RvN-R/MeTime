@@ -5,7 +5,7 @@ from .models import Journal
 from .forms import CreatePostForm
 
 
-
+@login_required()
 def journal(request):
     """a view to journal homepage"""
     # user variable returns the request
