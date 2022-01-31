@@ -1,0 +1,146 @@
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --blackColor: #000;
+    --bgColor: rgba(0, 0, 0, 0.7);
+    --whiteColor:#f1f1f1;
+    --bgColorInput:#6c5ce7; /* from flat ui colors*/
+    --btnHover:#f1f1f1;
+    --btnInactive:#969696;
+    --primary-font: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('/media/bg2.jpg');
+    background-size: cover;
+    align-items: center;
+    color:var(--whiteColor);
+    font-family: var(--primary-font);
+}
+
+body::after{ 
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:var(--bgColor);
+    z-index:-1;
+}
+/* end of  global styles */
+
+
+/* input  */
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/* input label */
+.input label{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom:8px;
+}
+
+/* input select box */
+.input select {
+    border: none;
+    border-radius: 8px;
+    min-width: 300px;
+    font-size: 16px;
+    padding: 8px 4px;
+    background-color:var(--bgColorInput) ;
+    color: var(--whiteColor);
+
+}
+
+.input select:focus{
+    outline:none;
+}
+
+/* outer circle wrap */
+.circle-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+/* inner circle  wrap*/
+.circle-outline{
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 15px solid var(--whiteColor);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0, 0.1), 0 4px 6px -2px rgba(0, 0,0, 0.05);
+    
+}
+
+/* inner circle dot */
+.circle-progress{
+    width:50px;
+    height:50px;
+    position: absolute;
+    background-color: var(--bgColorInput);
+    border-radius: 50%;
+    transition: 4s ease all;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0, 0.1), 0 4px 6px -2px rgba(0, 0,0, 0.05);
+    
+}
+
+/* circle breathe animation */
+.circle-grow{
+    transform:scale(5.3);
+}
+
+.breaths{
+    text-align:center;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+/* instructions */
+.instructions {
+    text-align: center;
+    margin-bottom: 32px;
+
+}
+
+/*  start breathing button */
+.start{
+    padding:12px 35px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--bgColorInput);
+    color:var(--whiteColor);
+    cursor: pointer;
+    border:none;
+    transition: 0.3s ease all;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0, 0.1), 0 1px 2px 0 rgba(0, 0,0, 0.06);
+}
+
+.start:hover{
+    background-color:var(--btnHover);
+    color: var(--bgColorInput);
+}
+
+/* inactive btn   */
+.button-inactive{
+    pointer-events: none;
+    background-color:var(--btnInactive);
+    
+}
