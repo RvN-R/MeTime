@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name="Description" content="Mental health site created for the soda trust hackathon by code institute students.">
     <meta name="keywords" content="mental health awareness, mental health tips, daily journal,mental health resources, hackathon, soda">
-    <meta name="authors" content="Sandra, Rebecca ,Rebecca, Ashley">  
+    <meta name="authors" content="Sandra, Debbie ,Richard, Ashley">  
     {% endblock %}
     
 
@@ -63,10 +63,12 @@
 
                  {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
-                 <li class="nav-item"><a href="#" class="nav-link">My Journal</a></li>
-                 
+
+                 <li class="nav-item"><a href="#dashboard" class="nav-link">Dashboard</a></li>
                  {% endif %}
-                 <li class="nav-item"><a href="#" class="nav-link">My Journal</a></li>
+                 <li class="nav-item"><a href="{% url 'journal' %}" class="nav-link">My journal</a></li>
+                 <li class="nav-item"><a href="#pledges" class="nav-link">Pledges</a></li>
+
                  <li class="nav-item"><a href="{% url 'account_logout' %}" class="nav-link">Logout</a></li>
                  {% else %}
                  <li class="nav-item"><a href="{% url 'account_login' %}" class="nav-link">Login</a></li>
