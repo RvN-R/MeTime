@@ -1,9 +1,51 @@
-{% extends "base.html" %}
+
 {% load static %}
 
-{% block content %}
-<h1 class="display-4 text-center breath">Welcome to our relax space</h1>
+ {% block extra_css %}
+ <!-- <link rel="stylesheet" href="/static/css/breath.css"> -->
+  <!--  <link rel="stylesheet" href="{% static 'css/breath.css' %}"> -->
 
-<img src="/media/undraw_meditation_re_gll0.svg" alt="">
+   <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/b22084529e.js" crossorigin="anonymous"></script>
+
+     {% endblock %}
+
+{% block content %}
+
+<!-- breath/relax -->
+<section class="breath">
+    <div class="meditate">
+    <div class="input">
+        <label class="text-white">Select Breaths</label>
+        <select class="breath-input text-white">
+            <option value="3">3 Breaths</option>
+            <option value="5">5 Breaths</option>
+            <option value="7">7 Breaths</option>
+        </select>
+    </div>
+
+    <div class="circle-wrap">
+        <div class="circle-outline"></div>
+        <div class="circle-progress"></div>
+    </div>
+    <p class="breaths text-white">Breaths Remaining:
+        <span class="breaths-text text-white">3</span>
+    </p>
+    <p class="instructions text-white">Are you ready to start your session?</p>
+    <a class="text-info text-decoration-none py-3 m-4" href="{% url 'home' %}">Home</i></a>
+
+    <button class="start">Start</button>
+    </div>
+   </section>
+     {% block postloadjs %}  
+        <script src="{% static 'js/breath.js' %}"></script>
+    {% endblock %}
+
+
 
 {% endblock %}
